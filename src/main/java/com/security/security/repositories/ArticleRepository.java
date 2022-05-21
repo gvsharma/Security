@@ -35,7 +35,7 @@ public interface ArticleRepository extends JpaRepository<ArticleEntity, Long> {
     @Modifying
     @Transactional
     @Query(value = "delete from articles a where a.slug = ?1", nativeQuery = true)
-    void deleteBySlug();
+    void deleteBySlug(String slug);
 
     @Modifying
     @Transactional
