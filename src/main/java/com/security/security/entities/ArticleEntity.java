@@ -12,7 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ArticleEntity {
+public class ArticleEntity extends BaseEntity{
     private String slug;
     private String title;
     private String description;
