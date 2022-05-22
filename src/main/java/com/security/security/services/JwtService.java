@@ -5,11 +5,13 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.stereotype.Service;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.util.Date;
 
+@Service
 public class JwtService {
     // TODO: this should be in .properties file, not checked into git
     public static final String JWT_KEY = "dL9nLwtKCjFfgj9gwuhJwqw4R4iepkfzC5XGdLfpyFTKuWDcpGCeZDBghzitHUjn";
